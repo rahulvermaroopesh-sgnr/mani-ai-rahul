@@ -48,6 +48,79 @@ st.set_page_config(
     page_icon="🧪",
     layout="wide"
 )
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.stApp {
+    background:
+        radial-gradient(ellipse at 10% 0%, #142C46 0%, transparent 40%),
+        linear-gradient(135deg, #080D18, #0B1424 60%, #101C2E);
+    color: #EAF3FF;
+    font-family: 'Inter', sans-serif;
+}
+
+[data-testid="stHeader"] {
+    background: rgba(8, 13, 24, 0.85);
+}
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #101B2D, #080F1D);
+    border-right: 1px solid rgba(84, 229, 242, 0.2);
+}
+
+[data-testid="stSidebar"] * {
+    color: #EAF3FF;
+}
+
+h1, h2, h3 {
+    color: #F1F8FF;
+    font-weight: 800;
+}
+
+p, li {
+    color: #C4D3E6;
+    line-height: 1.8;
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, #54E5F2, #4AA8E8);
+    color: #07111F;
+    border: none;
+    border-radius: 11px;
+    font-weight: 700;
+    padding: 0.65rem 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(84, 229, 242, 0.22);
+}
+
+input, textarea {
+    background: #101C2E !important;
+    color: #F1F8FF !important;
+    border: 1px solid #30445D !important;
+    border-radius: 10px !important;
+}
+
+[data-testid="stMetric"] {
+    background: rgba(20, 34, 54, 0.75);
+    border: 1px solid rgba(84, 229, 242, 0.18);
+    border-radius: 16px;
+    padding: 18px;
+}
+
+[data-testid="stMetricValue"] {
+    color: #54E5F2;
+}
+
+hr {
+    border-color: rgba(140, 170, 200, 0.2);
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 # ============================================================
